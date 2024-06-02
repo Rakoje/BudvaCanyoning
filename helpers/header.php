@@ -20,7 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" defer></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image" href="../assets/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

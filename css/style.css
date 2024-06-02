@@ -306,6 +306,34 @@ svg {
     text-align: center;
 }
 
+.navbar-toggler {
+    border: none !important;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    position: relative;
+}
+
+.navbar-toggler-icon {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 0.75)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M10 20h60M10 40h60M10 60h60'/></svg>"); /* Adjusted SVG for larger size */
+    transition: opacity 0.3s ease;
+}
+
+.navbar-toggler-icon.x-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 255, 255, 0.75)' stroke-width='6' stroke-linecap='round' d='M20 20 L60 60 M60 20 L20 60' /></svg>"); /* Adjusted SVG for larger size */
+}
+
+.navbar-toggler.active .navbar-toggler-icon {
+    opacity: 0;
+}
+
+.navbar-toggler.active .navbar-toggler-icon.x-icon {
+    opacity: 1;
+}
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {

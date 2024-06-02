@@ -130,23 +130,8 @@ include('helpers/navbar.php'); ?>
                 </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                <a href="assets/21.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="assets/21.jpg" alt="">
-                </a>
-            </div>
-            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                <a href="assets/22.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="assets/22.jpg" alt="">
-                </a>
-            </div>
-            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
                 <a href="assets/23.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="assets/23.jpg" alt="">
-                </a>
-            </div>
-            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                <a href="assets/26.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="assets/26.jpg" alt="">
                 </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
@@ -162,11 +147,6 @@ include('helpers/navbar.php'); ?>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
                 <a href="assets/30.jpg" class="fancylight popup-btn" data-fancybox-group="light">
                     <img class="img-fluid" src="assets/30.jpg" alt="">
-                </a>
-            </div>
-            <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
-                <a href="assets/31.jpg" class="fancylight popup-btn" data-fancybox-group="light">
-                    <img class="img-fluid" src="assets/31.jpg" alt="">
                 </a>
             </div>
             <div class="item gts col-lg-3 col-md-4 col-6 col-sm">

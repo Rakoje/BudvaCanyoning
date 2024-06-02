@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.add('navbar-program');
     } else if (filename === 'booking.php') {
         navbar.classList.add('navbar-booking');
-    } else if (filename === 'photos.php') {
+    } else if (filename === 'gallery.php') {
         navbar.classList.add('navbar-photos');
     } else if (filename === 'contact.php') {
         navbar.classList.add('navbar-contact');
@@ -95,6 +95,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+$('.portfolio-menu ul li').click(function(){
+    $('.portfolio-menu ul li').removeClass('active');
+    $(this).addClass('active');
+
+    var selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotope({
+        filter:selector
+    });
+    return  false;
+});
+$(document).ready(function() {
+    var popup_btn = $('.popup-btn');
+    popup_btn.magnificPopup({
+        type : 'image',
+        gallery : {
+            enabled : true
+        }
+    });
+});
+document.getElementById('navbar-toggler').addEventListener('click', function() {
+    this.classList.toggle('active');
+    const icon = this.querySelector('.navbar-toggler-icon');
+    if (this.classList.contains('active')) {
+        icon.classList.add('x-icon');
+    } else {
+        icon.classList.remove('x-icon');
+    }
+});
 document.addEventListener('DOMContentLoaded', function() {
     const numberInput = document.getElementById('number');
     const guests = document.getElementById('guests');
@@ -128,25 +156,5 @@ document.addEventListener('DOMContentLoaded', function() {
             guests.appendChild(newDiv);
         }
         price.innerHTML = `<h1>Price: ${value * 80}€</h1>`
-    });
-});
-
-$('.portfolio-menu ul li').click(function(){
-    $('.portfolio-menu ul li').removeClass('active');
-    $(this).addClass('active');
-
-    var selector = $(this).attr('data-filter');
-    $('.portfolio-item').isotope({
-        filter:selector
-    });
-    return  false;
-});
-$(document).ready(function() {
-    var popup_btn = $('.popup-btn');
-    popup_btn.magnificPopup({
-        type : 'image',
-        gallery : {
-            enabled : true
-        }
     });
 });
