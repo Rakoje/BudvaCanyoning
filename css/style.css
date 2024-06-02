@@ -1,0 +1,626 @@
+body {
+    color: white;
+    font-family: 'DM Sans';
+    overflow-x: hidden;
+}
+
+.container {
+    flex: 1;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.home-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 25vh;
+}
+
+.canyoning-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/canyoning-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 25vh;
+}
+
+.jewel-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/jewel-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 25vh;
+}
+
+.program-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/program-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 20vh;
+}
+
+.offer-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 8vh;
+}
+
+.photos-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/photos-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 25vh;
+}
+
+.booking-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.8), rgba(1, 61, 2, 0.7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 20vh;
+}
+
+.contact-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 100vh;
+    padding-top: 20vh;
+}
+
+.thank-you-bg {
+    background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/thank-you-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    transition: opacity 1s ease;
+    min-height: 110vh;
+    padding-top: 35vh;
+}
+
+@supports not (-webkit-touch-callout : none) {
+    .home-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/home-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 25vh;
+    }
+
+    .canyoning-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/canyoning-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 25vh;
+    }
+
+    .jewel-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/jewel-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 25vh;
+    }
+
+    .program-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/program-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 20vh;
+    }
+
+    .offer-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 8vh;
+    }
+
+    .photos-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/photos-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 25vh;
+    }
+
+    .booking-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/booking-bg.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 20vh;
+    }
+
+    .contact-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/contact-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 110vh;
+        padding-top: 17vh;
+    }
+
+    .thank-you-bg {
+        background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/thank-you-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: opacity 1s ease;
+        min-height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+svg {
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+
+.svg-icon {
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+
+/*.footer-bg{
+    background: linear-gradient(to bottom, rgb(41, 49, 164), rgba(1, 61, 2, 0.8));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: opacity 1s ease;
+}*/
+.footer-bg {
+    width: 100%;
+}
+
+.footer-list a {
+    font-weight: 700;
+    color: #d3d3d3;
+}
+
+.footer-list a:hover {
+    color: white;
+}
+
+.links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    color: lightgrey;
+}
+
+/* Photos */
+.portfolio-menu {
+    text-align: center;
+}
+
+.portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all .5s ease;
+}
+
+.portfolio-item {
+    /*width:100%;*/
+}
+
+.portfolio-item .item {
+    /*width:303px;*/
+    float: left;
+    margin-bottom: 20px;
+}
+
+
+.center-end {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 40vh;
+}
+
+.container {
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar li {
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+@media (max-width: 991.98px) {
+    @supports (-webkit-touch-callout : none) {
+        .nav-link{
+            color: white !important;
+        }
+        .navbar-home,
+        .navbar-program,
+        .navbar-booking,
+        .navbar-photos,
+        .navbar-contact,
+        .navbar-thank-you {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(32, 160, 185, 0.2));
+            backdrop-filter: blur(5px); /* Blur effect */
+            -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+        }
+        .program-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/program-bg-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 20vh;
+        }
+    
+        .offer-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg-mobile.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 8vh;
+        }
+        
+        .thank-you-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/thank-you-bg-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 20vh;
+        }
+    }
+
+    @supports not (-webkit-touch-callout : none) {
+        .navbar-home {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/home-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+        }
+
+        .navbar-program {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/program-bg-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+        }
+
+        .navbar-booking {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/booking-bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+        }
+
+        .navbar-photos {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/photos-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+        }
+
+        .navbar-contact {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/contact-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+        }
+
+        .navbar-thank-you {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/thank-you-bg-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+        }
+
+        .program-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/program-bg-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 20vh;
+        }
+    
+        .offer-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg-mobile.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 8vh;
+        }
+        
+        .thank-you-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/thank-you-bg-mobile.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 20vh;
+        }
+    }
+}
+
+.home-text {
+    max-width: 700px;
+}
+
+.home-video {
+    margin-bottom: 5vh;
+}
+
+.blue-button {
+    color: white;
+    background-color: rgb(41, 49, 164);
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 5vh;
+}
+
+.form-control {
+    opacity: 0.7 !important;
+}
+
+.form-control:focus {
+    opacity: 1 !important;
+}
+
+
+/* Animations */
+.slide_up1 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideUp 1s ease, fadeIn 1s ease;
+    animation-fill-mode: forwards;
+}
+
+
+.slide_up1_5 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideUp 1.5s ease, fadeIn 1.5s ease;
+    animation-fill-mode: forwards;
+}
+
+.slide_up2 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideUp 2s ease, fadeIn 2s ease;
+    animation-fill-mode: forwards;
+}
+
+.slide_up_form {
+    bottom: 0;
+    opacity: 0;
+    animation: slideUpForm 2s ease, fadeIn 2s ease;
+    animation-fill-mode: forwards;
+}
+
+.slide_up2_5 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideUp 2.5s ease, fadeIn 2.5s ease;
+    animation-fill-mode: forwards;
+}
+
+
+.slide_l1 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideL 1s ease, fadeIn 1s ease;
+    animation-fill-mode: forwards;
+}
+
+
+.slide_l1_5 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideL 1.5s ease, fadeIn 1.5s ease;
+    animation-fill-mode: forwards;
+}
+
+.slide_l2 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideL 2s ease, fadeIn 2s ease;
+    animation-fill-mode: forwards;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.slide_l2_5 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideL 2.5s ease, fadeIn 2.5s ease;
+    animation-fill-mode: forwards;
+}
+
+
+.slide_r1_5 {
+    bottom: 0;
+    opacity: 0;
+    animation: slideR 1.5s ease, fadeIn 1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideUpForm {
+    from {
+        transform: translateY(15%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideL {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideR {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+p a {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: white;
+}
+
+
