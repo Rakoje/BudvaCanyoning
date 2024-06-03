@@ -345,6 +345,37 @@ svg {
 
 @media (max-width: 991.98px) {
     @supports (-webkit-touch-callout : none) {
+        .canyoning-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/canyoning-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 5vh;
+        }
+        .jewel-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/jewel-bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 5vh;
+        }
+
+        .offer-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 5vh;
+        }
         .nav-link{
             color: white !important;
         }
@@ -374,17 +405,6 @@ svg {
             min-height: 100vh;
             padding-top: 20vh;
         }
-    
-        .offer-bg {
-            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg-mobile.jpeg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: scroll;
-            transition: opacity 1s ease;
-            min-height: 100vh;
-            padding-top: 8vh;
-        }
         
         .thank-you-bg {
             background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/thank-you-bg-mobile.jpg');
@@ -399,6 +419,27 @@ svg {
     }
 
     @supports not (-webkit-touch-callout : none) {
+        .canyoning-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/canyoning-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 5vh;
+        }
+
+        .jewel-bg {
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/jewel-bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: opacity 1s ease;
+            min-height: 100vh;
+            padding-top: 5vh;
+        }
         .navbar-home {
             background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/home-bg.jpg');
             background-repeat: no-repeat;
@@ -472,7 +513,7 @@ svg {
             background-attachment: fixed;
             transition: opacity 1s ease;
             min-height: 100vh;
-            padding-top: 8vh;
+            padding-top: 5vh;
         }
         
         .thank-you-bg {
@@ -651,4 +692,6 @@ p a:hover {
     color: white;
 }
 
-
+iframe{
+    min-height: 200px;
+}

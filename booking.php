@@ -32,6 +32,9 @@ include('helpers/navbar.php'); ?>
                             <div class="mb-3">
                                 <label for="date" class="form-label">Date</label>
                                 <input type="date" class="form-control" id="date" name="date" required>
+                                <script type="text/javascript">
+                                    date.min = new Date().toISOString().split("T")[0];
+                                </script>
                             </div>
                             <div class="mb-3">
                                 <label for="number" class="form-label">Number of participants</label>
