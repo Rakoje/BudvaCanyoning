@@ -367,7 +367,7 @@ svg {
         }
 
         .offer-bg {
-            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg.jpeg');
+            background: linear-gradient(0deg, rgba(41, 49, 164, 0.6), rgba(1, 61, 2, 0.6)), url('../assets/offer-bg-mobile.jpeg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
