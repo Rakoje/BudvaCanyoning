@@ -33,18 +33,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$guest_weight = $_POST[$guest_index];
 		$guest_index = "guest_" . $i . "_shoe_size";
 		$guest_shoe_size = $_POST[$guest_index];
-		$email_content .= "Height: $guest_height cm<br>";
+        $guest_index = "guest_".$i."_suit_model";
+        $guest_suit_model = $_POST[$guest_index];
+        if (
+            empty($guest_height) ||
+            empty($guest_weight) ||
+            empty($guest_shoe_size) ||
+            empty($guest_suit_model)
+		) {
+            http_response_code(400);
+            echo "Please go back, complete the form and try again.";
+            exit;
+        }
+        $email_content .= "Height: $guest_height cm<br>";
 		$email_content .= "Weight: $guest_weight kg<br>";
 		$email_content .= "Shoe size: $guest_shoe_size<br>";
-		if (
-			empty($guest_height) ||
-			empty($guest_weight) ||
-			empty($guest_shoe_size)
-		) {
-			http_response_code(400);
-			echo "Please go back, complete the form and try again.";
-			exit;
-		}
+        $email_content .= "Canyoning suit model: $guest_shoe_size<br>";
+
 	}
 	$price = $guest_num * 80;
 	$email_content .= "Price: $price €<br>";
@@ -59,11 +64,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$redirectURL = "https://www.budvacanyoning.com/thank_you.php"; // the URL of the thank you page.
 	$MailSubject = 'Thank you ' . $n . ' ' . $surname . '! Reservation no. ' . $res_num; // the subject of the email
 
-	// Set content-type header for HTML email
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-	// Additional headers
 	$headers .= "From: {$MailToAddress}" . "\r\n";
 	$headers .= "Reply-To: {$MailToAddress}" . "\r\n";
 

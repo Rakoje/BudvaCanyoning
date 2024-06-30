@@ -60,6 +60,25 @@ include('helpers/navbar.php'); ?>
                                         <input type="number" class="form-control" id="guest_1_shoe_size"
                                                name="guest_1_shoe_size" placeholder="Shoe size (EU standard)" required>
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="guest_1_height" class="form-label">Canyoning suit model</label>
+                                        <div class="row">
+                                            <div class="col-sm-12 d-flex justify-content-between">
+                                                <div>
+                                                    <input type="radio" class="form-check-input" id="guest_1_male"
+                                                       name="guest_1_suit_model" value="Male" required> Male
+                                                </div>
+                                                <div>
+                                                    <input type="radio" class="form-check-input" id="guest_1_female"
+                                                           name="guest_1_suit_model" value="Female" required> Female
+                                                </div>
+                                                <div>
+                                                <input type="radio" class="form-check-input" id="guest_1_child"
+                                                       name="guest_1_suit_model" value="Child" required> Child
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mb-3">

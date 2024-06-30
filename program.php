@@ -55,6 +55,7 @@ include('helpers/navbar.php'); ?>
                         </li>
                         <li>Service of a professional canyoning guide.</li>
                         <li>Insurance and tax included in the price.</li>
+                        <li>Drink at the restaurant.</li>
                         <li>Video and photo material captured by GoPro cameras and phones.</li>
                     </ul>
                 </div>

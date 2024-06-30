@@ -129,13 +129,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const price = document.getElementById('price');
 
     numberInput.addEventListener('input', function() {
-        const value = parseInt(numberInput.value, 10) || 0;
+        let value = parseInt(numberInput.value, 10) || 0;
         guests.innerHTML = '';  // Clear existing divs
 
+        if(value <= 0) {
+            value = 1;
+            let invalid_number = true;
+
+        }
+        if(value > 50){
+            value = 50
+            let more_than_50 = true;
+        }
         for (let i = 0; i < value; i++) {
-            const newDiv = document.createElement('div');
+            let newDiv = document.createElement('div');
             newDiv.id = 'guest_' + (i + 1);
-            newDiv.innerHTML = `<div class="mb-1 text-center">
+            newDiv.innerHTML += `<div class="mb-1 text-center">
                                     <label for="guest_${i + 1}" class="form-label">Guest ${i + 1}</label>
                                 </div>
                                 <div class="mb-3">
@@ -152,6 +161,25 @@ document.addEventListener('DOMContentLoaded', function() {
                                     <label for="guest_${i + 1}_shoe_size" class="form-label">Shoe size</label>
                                     <input type="number" class="form-control" id="guest_${i + 1}_shoe_size"
                                      name="guest_${i + 1}_shoe_size" placeholder="Shoe size (EU standard)" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="guest_${i + 1}_height" class="form-label">Canyoning suit model</label>
+                                        <div class="row">
+                                            <div class="col-sm-12 d-flex justify-content-between">
+                                                <div>
+                                                    <input type="radio" class="form-check-input" id="guest_${i + 1}_male"
+                                                       name="guest_${i + 1}_suit_model" value="Male" required> Male
+                                                </div>
+                                                <div>
+                                                    <input type="radio" class="form-check-input" id="guest_${i + 1}_female"
+                                                           name="guest_${i + 1}_suit_model" value="Female" required> Female
+                                                </div>
+                                                <div>
+                                                <input type="radio" class="form-check-input" id="guest_${i + 1}_child"
+                                                       name="guest_${i + 1}_suit_model" value="Child" required> Child
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>`;
             guests.appendChild(newDiv);
         }
