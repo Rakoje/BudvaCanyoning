@@ -695,3 +695,8 @@ p a:hover {
 iframe{
     min-height: 200px;
 }
+
+.intl-tel-input,
+.iti{
+    width: 100%;
+}

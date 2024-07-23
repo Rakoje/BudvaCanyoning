@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$n = strip_tags(trim($_POST["name"]));
 	$surname = strip_tags(trim($_POST["surname"]));
 	$email = filter_var(trim($_POST["email"]), FILTER_VALIDATE_EMAIL);
-	$phone = trim($_POST["phone"]);
+	$phone = "+".trim($_POST["country_code"])." ".trim($_POST["phone"]);
 	$date = trim($_POST["date"]);
 	$notes = trim($_POST["notes"]);
 	$number = trim($_POST["number"]);
@@ -71,10 +71,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$headers .= "Reply-To: {$MailToAddress}" . "\r\n";
 
 
-	if (!mail($email, $MailSubject, $email_content, $headers)) {
+	if (!mail($MailToAddress, $MailSubject, $email_content, $headers)) {
 		echo "Error sending e-mail!";
-	} else {		
-		if (!mail($MailToAddress, $MailSubject, $email_content, $headers)) {
+	} else {
+        sleep(2);
+		if (!mail($email, $MailSubject, $email_content, $headers)) {
 			echo "Error sending e-mail!";
 		}
 		header("Location: " . $redirectURL);
