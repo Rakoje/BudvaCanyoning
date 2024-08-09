@@ -128,6 +128,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const numberInput = document.getElementById('number');
     const guests = document.getElementById('guests');
     const price = document.getElementById('price');
+    const photographer = document.getElementById('photographer');
+    let full_price = 80
 
     numberInput.addEventListener('input', function () {
         let value = parseInt(numberInput.value, 10) || 0;
@@ -184,6 +186,14 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </div>`;
             guests.appendChild(newDiv);
         }
-        price.innerHTML = `<h1>Price: ${value * 80}€</h1>`
+        full_price = 80 * value;
+        price.innerHTML = `<h1>Price: ${full_price + camera}€</h1>`
     });
+
+    photographer.addEventListener('change', function(){
+        console.log(photographer.value);
+        if(photographer.checked) camera = 200;
+        else camera = 0;
+        price.innerHTML = `<h1>Price: ${full_price + camera}€</h1>`
+    })
 });

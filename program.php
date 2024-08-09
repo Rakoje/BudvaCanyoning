@@ -61,6 +61,8 @@ include('helpers/navbar.php'); ?>
                         <li>Insurance and tax included in the price.</li>
                         <li>Drink at the restaurant.</li>
                         <li>Video and photo material captured by GoPro cameras and phones.</li>
+                        <li>**Video and photo material captured and edited by professional equipment
+                            for an additional <b>200€</b> per group</li>
                     </ul>
                 </div>
                 <br>

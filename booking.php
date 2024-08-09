@@ -104,6 +104,12 @@ include('helpers/navbar.php'); ?>
                                 </div>
                             </div>
                         </div>
+                        <div class="mb-3 d-flex">
+                            <div>
+                                <input type="checkbox" class="form-check-input" id="photographer"
+                                       name="photographer">
+                            </div>&nbsp;<label for="photographer" class="form-label">Professional photographer (optional)</label>
+                        </div>
                         <div class="mb-3">
                             <label for="notes" class="form-label">Additional notes</label>
                             <textarea rows="5" class="form-control" id="notes" name="notes"

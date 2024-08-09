@@ -52,6 +52,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	}
 	$price = $guest_num * 80;
+    $camera = 0;
+    if(isset($_POST["photographer"])) {
+        $email_content .= "Photographer: Yes<br>";
+        $camera = 200;
+    } else {
+        $email_content .= "Photographer: No<br>";
+    }
+    $price += $camera;
 	$email_content .= "Price: $price €<br>";
 	$email_content .= "Additional notes: $notes<br><br>";
 	$email_content .= "Get ready for an unforgettable adventure!<br><br>Sincerely,<br>Budva Canyoning";
